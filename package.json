@@ -1,0 +1,24 @@
+{
+  "name": "saas-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Multi-tenant SaaS platform for Pakistani small businesses — WhatsApp-native storefronts. Codename TBD.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web",
+    "typecheck": "npm run typecheck --workspace=apps/web",
+    "test": "npm run test --workspace=apps/web",
+    "test:rls": "npm run test:rls --workspace=apps/web",
+    "db:generate": "npm run db:generate --workspace=packages/database",
+    "db:migrate": "npm run db:migrate --workspace=packages/database",
+    "db:seed": "npm run db:seed --workspace=packages/database"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
