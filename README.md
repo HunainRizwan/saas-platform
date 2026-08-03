@@ -139,3 +139,4 @@ npm run lint
 npm run test              # unit tests (Vitest)
 bash apps/web/tests/rls/run_rls_tests.sh   # RLS isolation suite (needs local Postgres)
 ```
+
